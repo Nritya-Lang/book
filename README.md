@@ -1,2 +1,2 @@
-# Feral-Book
-Documentation and Tutorial for Feral
+# Natya ( नाट्य ) Lang-Basics
+Documentation and Tutorial for Natya 
