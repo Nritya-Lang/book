@@ -1,8 +1,8 @@
 # Builder (Deprecated)
 
-The **builder** module defines a `builder_t` type that allows to build and install external modules to be used with Feral
+The **builder** module defines a `builder_t` type that allows to build and install external modules to be used with Nritya
 
-A guide on how to write and build modules for Feral can be read [here](https://medium.com/p/writing-c-modules-for-feral-391c30ac7739?source=email-852839018f8a--writer.postDistributed&sk=b2de39e5f849e75e3b4ea9bdeeb1b4db).
+A guide on how to write and build modules for Nritya can be read [here](https://medium.com/p/writing-c-modules-for-nritya-391c30ac7739?source=email-852839018f8a--writer.postDistributed&sk=b2de39e5f849e75e3b4ea9bdeeb1b4db).
 
 All the given examples assume that the **builder** module was imported using:
 ```
@@ -40,7 +40,7 @@ io.println(build);
 
 Possible output:
 ```
-builder_t{linker_flags:  , lib_flags:  -lferalvm -lgmpxx -lgmp -lmpfr , lib_dirs:  -L/usr/lib -L/usr/local/lib/feral , srcs:  , ccache: /usr/bin/ccache , compiler: g++, is_dll: false, compiler_opts:  -std=c++11 -O2 , inc_dirs:  -I/usr/include }
+builder_t{linker_flags:  , lib_flags:  -lnrityavm -lgmpxx -lgmp -lmpfr , lib_dirs:  -L/usr/lib -L/usr/local/lib/nritya , srcs:  , ccache: /usr/bin/ccache , compiler: g++, is_dll: false, compiler_opts:  -std=c++11 -O2 , inc_dirs:  -I/usr/include }
 ```
 
 ### make_dll
@@ -60,7 +60,7 @@ io.println("Is DLL? ", build.is_dll, ". Compiler options: ", build.compiler_opts
 Possible output:
 ```
 Is DLL? false. Compiler options:  -std=c++11 -O2 
-Is DLL? true. Compiler options:  -std=c++11 -O2 -shared -fPIC -rdynamic -Wl,-rpath,/home/feral/.feral/lib
+Is DLL? true. Compiler options:  -std=c++11 -O2 -shared -fPIC -rdynamic -Wl,-rpath,/home/nritya/.nritya/lib
 ```
 
 ### add_comp_opts
@@ -120,11 +120,11 @@ io.println("Libraries and directories \n\t", build.lib_flags, "\n\t", build.lib_
 Possible output:
 ```
 Libraries and directories 
-	 -lferalvm -lgmpxx -lgmp -lmpfr 
-	 -L/usr/lib -L/usr/local/lib/feral 
+	 -lnrityavm -lgmpxx -lgmp -lmpfr 
+	 -L/usr/lib -L/usr/local/lib/nritya 
 Libraries and directories 
-	 -lferalvm -lgmpxx -lgmp -lmpfr -lcurl 
-	 -L/usr/lib -L/usr/local/lib/feral -L/usr/local/lib
+	 -lnrityavm -lgmpxx -lgmp -lmpfr -lcurl 
+	 -L/usr/lib -L/usr/local/lib/nritya -L/usr/local/lib
 ```
 
 ### add_src
@@ -170,10 +170,10 @@ sys.exit(build.perform('learn'));
 
 Possible output:
 ```
-$ feral install
+$ nritya install
 Building ...
-=> build/libferallearn.so
+=> build/libnrityalearn.so
 Installing ...
-=> build/* -> /home/feral/.feral/lib/ ...
+=> build/* -> /home/nritya/.nritya/lib/ ...
 Installation successful!
 ```

@@ -30,7 +30,7 @@ for let i = 1; i <= 10; ++i {
 ```
 Yep, that's it! And if, say, we want to do this even for 1000, all we have to do is change the `i <= 10` condition to `i <= 1000`, and boom! It's done! This is a really basic example of loops but it should suffice for now.
 
-Feral has 3 kinds of loops:
+Nritya has 3 kinds of loops:
 1. Simple `for` loop
 2. `foreach` loop
 3. `while` loop
@@ -86,4 +86,4 @@ for ; !v.empty(); {
 ```
 Not quite pleasing, is it!
 
-Anyway, that's the fundamentals of loops. Next up, we are going to cover the `member functions` in Feral.
+Anyway, that's the fundamentals of loops. Next up, we are going to cover the `member functions` in Nritya.

@@ -1,20 +1,20 @@
 # Hello World!
 
-A simple **hello world** program in Feral can be written as:
+A simple **hello world** program in Nritya can be written as:
 ```py
 let io = import('std/io');
 io.println('hello, world');
 ```
 
-Save the code in a file named, say `hello.fer`, and run it using the `feral` binary which we built in the [installation](./01-install.md) document.
+Save the code in a file named, say `hello.fer`, and run it using the `nritya` binary which we built in the [installation](./01-install.md) document.
 Assuming that no `PREFIX_DIR` was set, the binary would be created in the `build/bin/` directory of the cloned repostory. Hence, the command to run our script would be:
 ```bash
-./build/bin/feral hello.fer
+./build/bin/nritya hello.fer
 ```
 
 This will output `hello world` on the display.
 
-Congratulations! You have successfully written your first program in Feral!
+Congratulations! You have successfully written your first program in Nritya!
 
 # Additional Notes
 
@@ -57,4 +57,4 @@ it will be assumed that wherever `print(ln)` is used, the `io` module has been a
 
 The `print` function is different from `println` in that it will not automatically add new line character at the end. Also, the `print` function requires at least one argument, whereas the `println` function requires no argument - in which case, it will simply enter a new line. For all other intents and purposes, the `print` and `println` functions are identical.
 
-Next, we are going to dive deeper in the language and understand Feral's variable system.
+Next, we are going to dive deeper in the language and understand Nritya's variable system.

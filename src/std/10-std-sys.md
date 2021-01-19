@@ -1,6 +1,6 @@
 # Sys
 
-The **sys** module provides information and control of the feral interpreter
+The **sys** module provides information and control of the nritya interpreter
 
 All the given examples assume the following imports:
 ```
@@ -58,7 +58,7 @@ else {
 ```
 sys.args: vector<string>
 ```
-Contains the arguments passed to feral, after the main source file
+Contains the arguments passed to nritya, after the main source file
 
 Example (*args.fer*):
 ```
@@ -67,9 +67,9 @@ io.println(sys.args);
 
 Possible output:
 ```
-$ feral args.fer 1 2 3
+$ nritya args.fer 1 2 3
 [1, 2, 3]
-$ feral args.fer hello world
+$ nritya args.fer hello world
 [hello, world]
 ```
 
@@ -97,17 +97,17 @@ io.println(sys.self_base);
 
 Possible output:
 ```
-$ /usr/local/bin/feral loc.fer
+$ /usr/local/bin/nritya loc.fer
 /usr/local
-$ feral loc.fer
-feral
+$ nritya loc.fer
+nritya
 ```
 
 ### install_prefix
 ```
 sys.install_prefix: string
 ```
-Contains the path to the feral installation directory
+Contains the path to the nritya installation directory
 
 Example:
 ```

@@ -207,7 +207,7 @@ You are 21 years old
 ```
 scaneof(prompt: string = '') -> string
 ```
-Reads text from the standard input until *EOF* is found. Even if *EOF* can be emitted by a user (usually *CTRL-D* on UNIX), `scaneof` is more likely to be useful when a **Feral** script takes as an input the output of another program.
+Reads text from the standard input until *EOF* is found. Even if *EOF* can be emitted by a user (usually *CTRL-D* on UNIX), `scaneof` is more likely to be useful when a **Nritya** script takes as an input the output of another program.
 
 An optional `prompt` parameter can be passed to write the given string before reading the standard input.
 
@@ -221,7 +221,7 @@ Possible output:
 ```
 echo "My name is John Doe,
 I am 21 years old,
-I live on Mars" | feral bio.fer
+I live on Mars" | nritya bio.fer
 Here is everything we know about you:
 My name is John Doe,I am 21 years old,I live on Mars
 ```
@@ -262,7 +262,7 @@ io.fprintln(io.stderr, 'We have a problem');
 
 Possible usage:
 ```
-feral status.fer 2> /dev/null # redirect stderr to /dev/null
+nritya status.fer 2> /dev/null # redirect stderr to /dev/null
 ```
 
 Gives the output:
@@ -284,7 +284,7 @@ io.fprintln(io.stderr, 'We have a problem');
 
 Possible usage:
 ```
-feral status.fer 1> /dev/null # redirect stdout to /dev/null
+nritya status.fer 1> /dev/null # redirect stdout to /dev/null
 ```
 
 Gives the output:

@@ -5,7 +5,7 @@ we will have to take some sort of input from the user. And for this, we have one
 
 ## The `scan` Function
 
-Feral has an `io` function `scan()` which allows the programmer to take user input. It can optionally take in a prompt string
+Nritya has an `io` function `scan()` which allows the programmer to take user input. It can optionally take in a prompt string
 and returns the input entered by the user as a string. The programmer has complete control to do whatever they want with this input string.
 
 For example,
@@ -42,4 +42,4 @@ Well, there isn't anything else to learn about input for now. The `scan` functio
 more fine grain control over taking input.
 
 This guide has used the term `function` a lot of times. Next up, it is time to understand what exactly they are and how to work with them
-in Feral.
+in Nritya.

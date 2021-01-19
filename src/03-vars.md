@@ -7,7 +7,7 @@ Obviously, we do not want, for our sanity's sake, to use memory addresses direct
 That is really complicated, hard to remember, and an absolute nightmare to maintain.
 So, we instead assign these memory locations, containing our data, to names which we can use in our programs as needed.
 
-Clearly, variables are a crucial part of a programming language, and hence, Feral has it as well.
+Clearly, variables are a crucial part of a programming language, and hence, Nritya has it as well.
 
 Creating a variable is really easy. For example, if we want an integer data, say `20`, to be stored in memory (and be accessible later),
 we can create a variable for that, say `a`, and use that when required. To do this, the variable can be created directly as:
@@ -15,7 +15,7 @@ we can create a variable for that, say `a`, and use that when required. To do th
 let a = 20;
 ```
 
-Since Feral is a dynamically typed language, we need not mention the data type of the value that we want to store manually.
+Since Nritya is a dynamically typed language, we need not mention the data type of the value that we want to store manually.
 We can then use it later on, say in `println`, to print the value of this variable. To do that, we can do the following:
 ```py
 let io = import('std/io');
@@ -45,7 +45,7 @@ x = 'hi';
   ^
 ```
 
-Do note that in error message, Feral also provides us with a way to use same variable name for a different type: `variable redeclaration`.
+Do note that in error message, Nritya also provides us with a way to use same variable name for a different type: `variable redeclaration`.
 Using `variable redeclaration`, we can *recreate* a variable with an existing name.
 The old variable will cease to exist and the new variable will replace it.
 
@@ -57,12 +57,12 @@ let a = 'hi';
 On the second line, a is redeclared as a `str` (with value 'hi'). Now you can no longer assign an integer to it.
 
 Although the language is dynamically typed, it does impose some restrictions on it.
-We will understand more about the types in Feral in the next chapter - [Data Types](./04-data-types.md).
+We will understand more about the types in Nritya in the next chapter - [Data Types](./04-data-types.md).
 
 ## Variable Scopes
 
 The scope of a variable basically defines its lifetime - when it is created to when it is destroyed.
-Feral, like many other languages, uses braces to define chunks, or **blocks**, of code.
+Nritya, like many other languages, uses braces to define chunks, or **blocks**, of code.
 Any variable that is created, has its lifetime bound to this block. It will not be accessible outside this block.
 
 For example:
@@ -114,7 +114,7 @@ is a new variable declaration.
 
 ## Variable Naming
 
-One last important thing about variables is their naming. Feral defines specific rules based on which you can name variables,
+One last important thing about variables is their naming. Nritya defines specific rules based on which you can name variables,
 quite similar to most other languages. These rules are that variable names:
 1. Must begin with an alphabet (irrelevant of the case) or underscore
 2. Can contain numbers anywhere except the first character
@@ -122,4 +122,4 @@ quite similar to most other languages. These rules are that variable names:
 
 Well, that is basically how variables, their reassignment, and their scopes, work. Not much to learn or understand and pretty easy - which is the goal!
 
-Next up, we'll understand the concept of `data types` and see some of the fundamental data types in Feral.
+Next up, we'll understand the concept of `data types` and see some of the fundamental data types in Nritya.

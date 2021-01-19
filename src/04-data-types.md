@@ -14,10 +14,10 @@ bool (boolean)
 string (sequence of characters)
 ```
 
-In Feral, the `char` data type does not exist as even a single character, in Feral, is a string.
-Therefore, all these data types except `char` are fundamental types in Feral.
+In Nritya, the `char` data type does not exist as even a single character, in Nritya, is a string.
+Therefore, all these data types except `char` are fundamental types in Nritya.
 
-However, Feral is a `dynamically typed` language. This means that when we create variables, we do not provide types for the variable.
+However, Nritya is a `dynamically typed` language. This means that when we create variables, we do not provide types for the variable.
 Instead, these are deduced by the interpreter at run time based on the value that we provide to the variable. There are some pros and cons
 to this method. The biggest pro being that writing code is quicker, while the biggest con is that the code may be difficult to understand
 at a glance.
@@ -30,15 +30,15 @@ let i = 5;
 Then, `s` is a variable which is deduced by the interpreter to be of type `string` because the expression `hi` is a string,
 whereas `i` is a variable that is deduced by the interpreter to be of type `int` because `5` is an integer.
 
-There are also complex data types in Feral which are created by grouping of fundamental types.
+There are also complex data types in Nritya which are created by grouping of fundamental types.
 We will understand that in later chapters.
 
-For now, let's understand a bit in-depth about the fundamental data types in Feral.
+For now, let's understand a bit in-depth about the fundamental data types in Nritya.
 
 ## Fundamental Types
 
 These data types are always available for the programmer and are easily deduced by the interpreter based on values.
-Without these types, a lot of things would not be possible in Feral. For example, if the `int` type was absent,
+Without these types, a lot of things would not be possible in Nritya. For example, if the `int` type was absent,
 you would not be able to write any code requiring calculations. Booleans are exceptions to this as you can imitate
 the booleans using integers (say, integer `1` for `true`, integer `0` for `false`).
 
@@ -46,7 +46,7 @@ There are some important things to understand about these data types, so let's d
 
 ### Integers
 
-Integers represent all the negative and positive numbers in Feral - all the numbers without decimal that is.
+Integers represent all the negative and positive numbers in Nritya - all the numbers without decimal that is.
 Theoretically, it can contain any number in the range: `(-∞,∞)`.
 
 Note that unlike many (especially compiled) languages, numbers are not limited to 32, 64, or even 128 bit.
@@ -80,8 +80,8 @@ let flt = 12.0;
 
 ### Bools
 
-Booleans are the `true` and `false` values in Feral. These are used when you want to know something in a yes or no fashion.
-The `true` and `false` are special (constant) variables in Feral which signify their respective boolean values.
+Booleans are the `true` and `false` values in Nritya. These are used when you want to know something in a yes or no fashion.
+The `true` and `false` are special (constant) variables in Nritya which signify their respective boolean values.
 These two special variables cannot be reassigned and are always available globally throughout the program's life.
 
 For example,
@@ -93,9 +93,9 @@ let f = false;
 ### Strings
 
 Strings are, essentially, sequences of characters that are, well, just that! From a single character on your keyboard,
-to even entire articles written by you, can be considered and contained in strings. These strings, in Feral, are often referred
-to as constant strings (const strings) when they are hardcoded in your code. Strings are also how input is received in Feral,
-which will be covered in the next chapter of the book. There are 3 ways to write constant strings in Feral:
+to even entire articles written by you, can be considered and contained in strings. These strings, in Nritya, are often referred
+to as constant strings (const strings) when they are hardcoded in your code. Strings are also how input is received in Nritya,
+which will be covered in the next chapter of the book. There are 3 ways to write constant strings in Nritya:
 
 1. Enclosing in between single quotes ('\<some string\>')
 2. Enclosing in between double quotes ("\<some string\>")
@@ -109,7 +109,7 @@ let s2 = "string in 'double' quotes";
 let s3 = `string in between back ticks with 'single' and "double" quotes inside`;
 ```
 
-An important thing to consider is that Feral does interpret some escape sequences. They are:
+An important thing to consider is that Nritya does interpret some escape sequences. They are:
 ```
 \a - Alert bell
 \b - Backspace

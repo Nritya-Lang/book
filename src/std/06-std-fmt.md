@@ -17,7 +17,7 @@ let io = import('std/io');
 fmt.template(string) -> string
 ```
 Takes a template string, evaluates it, and returns the final string. Does **not** modify the original string.
-A template string contains snippets of code in between the usual string content. These snippets of code must be valid Feral expressions and enclosed between opening and closing **braces** (`{<expression here>}`).
+A template string contains snippets of code in between the usual string content. These snippets of code must be valid Nritya expressions and enclosed between opening and closing **braces** (`{<expression here>}`).
 
 Example:
 ```

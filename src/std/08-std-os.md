@@ -58,7 +58,7 @@ io.println('$HOME=', os.get_env('HOME'));
 
 Possible output:
 ```
-$HOME=/home/feral
+$HOME=/home/nritya
 ```
 
 ### set_env
@@ -127,7 +127,7 @@ Copies all the content of the source file or folder `src` into `dest`. The path 
 
 Example:
 ```
-os.install('/home/feral/Documents', '/mnt/backup');
+os.install('/home/nritya/Documents', '/mnt/backup');
 ```
 
 ### get_cwd
@@ -143,7 +143,7 @@ io.println(os.get_cwd());
 
 Possible output:
 ```
-/home/feral
+/home/nritya
 ```
 
 ### set_cwd
@@ -155,14 +155,14 @@ Changes the current working directory to be `wd`. The function returns `0` on su
 Example:
 ```
 io.println(os.get_cwd());
-os.set_cwd('/home/feral/Documents');
+os.set_cwd('/home/nritya/Documents');
 io.println(os.get_cwd());
 ```
 
 Possible output:
 ```
-/home/feral
-/home/feral/Documents
+/home/nritya
+/home/nritya/Documents
 ```
 
 ### mkdir
@@ -173,7 +173,7 @@ Creates all given directories. The function returns `0` on success and `-1` on e
 
 Example:
 ```
-os.mkdir('/home/feral/Build', '/home/feral/Tests');
+os.mkdir('/home/nritya/Build', '/home/nritya/Tests');
 ```
 
 ### rm
@@ -184,7 +184,7 @@ Removes all given files and directories. The function returns `0` on success and
 
 Example:
 ```
-os.rm('/home/feral/Build', '/home/feral/Tests');
+os.rm('/home/nritya/Build', '/home/nritya/Tests');
 ```
 
 ### copy
@@ -195,7 +195,7 @@ Copies all given files and directories to `dest`. The function returns `0` on su
 
 Example:
 ```
-os.copy('/home/feral/Build', '/home/feral/Tests', '/tmp');
+os.copy('/home/nritya/Build', '/home/nritya/Tests', '/tmp');
 ```
 
 ### chmod
@@ -206,7 +206,7 @@ Changes the permission of `dest` to `mode`, and recursively to its content if `r
 
 Example:
 ```
-os.chmod('/home/feral/Build', '777', false);
+os.chmod('/home/nritya/Build', '777', false);
 ```
 
 ### name
